@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="inscription.php" method="POST">
+            <h1>Inscription</h1>
+            <div class="social-container">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>Aucun compte</span>
+
+            <label for="username"></label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nom et Prénom"
+            /><br /><br />
+            <label for="password"></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mot de passe"/><br /><br />
+            <label for="password"></label>
+            <input
+              type="password"
+              id="conf_password"
+              name="conf_password"
+              placeholder="Confirmer Mot de passe"/><br /><br />
+            <input type="submit" value="S'inscrire" />
+          </form>
+        </div>
+
+        <div class="form-container login-container">
+          <form action="connexion.php" method="POST">
+            <h1>Se connecter</h1>
+            <div class="social-container">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- <span>Utiliser E-mail</span> -->
+
+            <label for="username"></label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nom et Prénom"
+            /><br /><br />
+            <label for="password"></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mot de passe"
+            /><br /><br />
+            <input type="submit" value="Se connecter" />
+            <!-- <button>Se connecter</button> -->
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>AUTO CAR</h1>
+              <p>La référence en termes de bagnoles</p>
+              <button class="ghost" id="login">Se connecter</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>AUTO CAR</h1>
+              <p>La référence en termes de bagnoles</p>
+              <button class="ghost" id="signup">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf8"></script>
+  </body>
+</html>
